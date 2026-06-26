@@ -1,0 +1,73 @@
+<html> 
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Place Order</title>
+        <link rel="stylesheet" href="order.css">
+        <link href="https://fonts.googleapis.com/css2?family=Knewave&family=Playfair+Display:ital,wght@1,600&family=Playwrite+NZ+Basic:wght@300&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        
+
+        <form class = "customer-info"> 
+            <h1> Place your order!</h1>
+            <h3> Name: </h3>
+            <input type="text" required >
+
+            <h3> Phone Number: </h3>
+            <input type="text" required maxlength="14">
+
+            <h3> Email: </h3>
+            <input type="text" required maxlength="254">
+
+        </form>
+        <form class = "payment-info"> 
+            <h3> Payment method: </h3>
+            <select name="Payment-method" id="Payment-method" required>
+                <option value="" disabled selected> Select a payment method </option>
+                <option value="credit_card">Credit Card</option>
+                <option value="paypal">PayPal</option>
+                <option value="bank_transfer">Bank Transfer</option>
+                <option value="apple_pay">Apple Pay</option>
+            </select>
+
+            <h3> Card Number: </h3>
+            <input type="text"
+                type="text"
+                maxlength="19"
+                inputmode="numeric"
+                pattern="[0-9]{3,4}"
+                required>
+
+            <h3> Expiration Date:</h3>
+            <input type="text"
+                type="text"
+                maxlength="5"
+                inputmode="numeric"
+                required>
+
+            <h3> CVV: </h3>
+            
+            <input type="text"
+                type="text"
+                maxlength="4"
+                inputmode="numeric"
+                pattern="[0-9]{3,4}"
+                required>
+
+
+            <h3> Billing ZIP Code: </h3>
+            <input type="text"
+                type="text"
+                maxlength="9"
+                inputmode="numeric"
+                required>
+
+            <h3> Tip: </h3><input type="text">
+        </form>
+        <section class="items">
+
+        </section>
+        <script href="Menu.js"></script>
+    </body>
+</html>

@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bakery Template</title>
+
+    <link rel="stylesheet" href="Style.css">
+    
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Knewave&family=Playfair+Display:ital,wght@1,600&family=Playwrite+NZ+Basic:wght@300&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+    <div class="title">
+        <header>Bakery Template</header>
+        <h3 class="subtext">Welcome to our Bakery!</h3>
+        <div class = "cart-container" id="cart-toggle" onclick="openCart()">
+            <img class="shopping-cart" src="https://cdn-icons-png.flaticon.com/512/1170/1170678.png" alt="Shopping Cart">
+            <div id ="cart-count" > 0 </div>
+        </div>
+        <nav class="navbar">
+             <ul>
+                <li><a class="link" href="#">Menu</a></li>
+                <li><a class="link" href="#">About Us</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="container">
+
+        <!-- MENU -->
+        <div class="menu">
+
+
+        <div class="item">
+                <a>
+                    <img src="https://via.placeholder.com/150" alt="Item">
+                    <h3>Item Name</h3>
+                    <p>Item Description</p>
+                    <p>$Price</p>
+                </a>
+            </div>
+        </div>
+        <div id="pop-up">
+            <div id="pop-up-content">
+                
+            </div>
+        </div>
+
+            
+        <!-- CART -->
+        <div class="cart">
+            <h2>Shopping Cart</h2>
+
+            <ul class="cart-items">
+
+            </ul>
+
+            <p>TOTAL: $<span id="total"> 0.00 </span></p>
+
+            <div class="btn">
+                <button id="checkout">CHECKOUT</button>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="about">
+        <h2>About Us</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </div>
+
+    <div class="contact">
+        <h2>Contact Us</h2>
+        <p>Email: info@bakerytemplate.com</p>
+        <p>Phone: (123) 456-7890</p>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Bakery Template. All rights reserved.</p>
+    </footer>
+    <script src="Script.js"></script>
+</body>
+</html>
